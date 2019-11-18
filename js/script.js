@@ -126,7 +126,6 @@ $("#endDate").datepicker({
   changeMonth: true,
 });
 
-<<<<<<< HEAD:js/script.js
 function dateDiff(){
     console.log('calc');
     var start = $(startDate).datepicker('getDate');
@@ -147,21 +146,6 @@ function dateDiff(){
 
 // API Key - could be sourced from anywhere
 // var API_KEY = 'AIzaSyDbpUzFX_ey574BjAKWiBA7VHN11-27IHc';
-=======
-function dateDiff() {
-  console.log('calc');
-  var start = $(startDate).datepicker('getDate');
-  var end = $(endDate).datepicker('getDate');
-  // convert milliseconds to seconds, then to seconds, then to minutes, then to hours
-  var days = (end - start) / 1000 / 60 / 60 / 24; //user readable format
-}
-
-$('#calcDate').click(function () {
-  console.log('date');
-  dateDiff();
-});
-
->>>>>>> 0819b551c6fe43ded0699acbbeaf964412c7e57e:GoogleMaps/js/script.js
 
 // Create script tag
 var script = document.createElement('script');
@@ -179,7 +163,7 @@ function initMap(distance, duration) {
   // Create map centered at wellington
   var center = { lat: -41.2911449, lng: 174.7814447 };
   var map = new google.maps.Map(
-    document.getElementById('map'), { zoom: 13, center: center });
+    document.getElementById('map'), { zoom: 13, center: center, mapTypeId: 'terrain' });
 
 
 
