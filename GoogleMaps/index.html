@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/eggplant/jquery-ui.min.css" integrity="sha256-fGxAC40oa1naPPwQ5ToWafNA+QtM1IUVuf9++DSeH6w=" crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css"> -->
+    <!-- bootstrap theme to be customize - use folder with sass because we need an uncompiled version of bootstrap -->
+
+
+    <!-- always keep your own stylesheet at the end of all the links -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap-SASS</title>
+  </head>
+  <body>
+
+      <div class="container bg-secondary">
+        <h1 class="text-primary mb-5">Registration Date</h1>
+        <label for="startDate" class="h3 mr-2">Start date:</label>
+         <input type="text" id="startDate">
+
+         <label for="endDate" class="h3 mr-2">End date:</label>
+         <input type="text" id="endDate">
+         <input type="button" id="calcDate" class="btn btn-lg btn-primary ml-4" value="Calculate Date">
+         <label for="days" class="h3 mr-2">Number of days</label>
+         <input type="text" id="days" class="form-control">
+
+      </div>
+
+    <title>Location Details</title>
+  </head>
+  <body>
+    <div class="container bg-secondary ">
+    <h1 class="text-primary mb-5">Walks Near Wellington</h1>
+    <div id="userInput">
+      <label for="distance" class="h3 white col-12">Distance of walk</label>
+      <select class="form-control col-12" id="distance">
+       <option value="3">Less than 3 KM</option>
+       <option value="8">Less than 8 KM</option>
+       <option value="10">More than 10 KM</option>
+       
+     </select>
+
+     <label for="duration" class="h3 white mt-5 col-12"> Duration of Walk</label>
+     <select class="form-control col-12" id="duration">
+      <option value="10">less than 10 minutes drive</option>
+      <option value="15">less than 15 minutes drive</option>
+      <option value="20">less than 20 minutes drive</option>
+      <option value="30">Less than 30 minutes drive</option>
+
+      
+
+
+    </select>
+
+    </div>
+    <button id="details" class="btn btn-lg btn-primary my-5" id="details" type="button" name="button">Show Results</button>
+    <div id="map"> </div>
+    </div>
+    <div class="container">
+
+      <div class="row btnRow">
+        <div class="col col-6">
+         <button class="btn btn-lg btn-primary mt-5" type="button" id="homeBtn"> Home </button>
+       </div>
+       <div class="col col-6">
+         <button class="btn btn-lg btn-primary mt-5" type="button" id="mapBtn"> Map </button>
+       </div>
+      </div>
+
+<!-- Home Page-->
+      <div id="home">
+
+
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            
+            <p class="py-5 text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <p class="py-5 text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+              non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.</p>
+          </div>
+
+        </div>
+
+        
+
+  </div> <!--end of home page -->
+
+  <!-- Map Page -->
+  <div id="map"> Map goes here </div>
+
+
+    <!--end of container-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/jquery.js"> </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="bootstrap-4.3.1/dist/js/bootstrap.min.js">
+
+    </script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbpUzFX_ey574BjAKWiBA7VHN11-27IHc&callback=initMap" async defer></script> -->
+    <!-- Always keep your own script at the end of all the scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+    <script src="js/config.json"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/demo.js"></script> -->
+  </body>
+</html>

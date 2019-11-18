@@ -146,10 +146,17 @@ $("#endDate").datepicker({
 });
 
 function dateDiff(){
+    console.log('calc');
     var start = $(startDate).datepicker('getDate');
     var end = $(endDate).datepicker('getDate');
-    var days = (end - start)/1000/60/60/24;
-}
+    // convert milliseconds to seconds, then to seconds, then to minutes, then to hours
+    var days = (end - start)/1000/60/60/24; //user readable format
+  }
+  
+  $('#calcDate').click(function(){
+    console.log('date');
+    dateDiff();
+  });
 
 
 
