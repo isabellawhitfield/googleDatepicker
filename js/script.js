@@ -151,12 +151,15 @@ function dateDiff(){
     var end = $(endDate).datepicker('getDate');
     // convert milliseconds to seconds, then to seconds, then to minutes, then to hours
     var days = (end - start)/1000/60/60/24; //user readable format
+    document.getElementById('days').value = days;
   }
   
   $('#calcDate').click(function(){
     console.log('date');
     dateDiff();
   });
+
+
 
 
 
