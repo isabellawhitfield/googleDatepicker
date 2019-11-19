@@ -163,7 +163,25 @@ function initMap(distance, duration) {
   // Create map centered at wellington
   var center = { lat: -41.2911449, lng: 174.7814447 };
   var map = new google.maps.Map(
-    document.getElementById('map'), { zoom: 13, center: center, mapTypeId: 'terrain' });
+    document.getElementById('map'), { zoom: 13, center: center, mapTypeId: 'roadmap', 
+    styles: [{
+        featureType: 'water',
+        stylers: [
+            {
+                color: 'pink',
+            }],
+            
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [
+                    {
+                        lightness: '-40',
+                    }
+
+        ]
+        }]
+    
+    });
 
 
 
@@ -193,10 +211,13 @@ function initMap(distance, duration) {
       // position to add marker
       var position = { lat: places[i].lat, lng: places[i].lng };
 
+      var myIcon = 'http://maps.google.com/mapfiles/kml/shapes/hiker.png';
+
       // crete marker
       var marker = new google.maps.Marker({
         position: position,
-        map: map
+        map: map,
+        icon: myIcon
       });
 
       newWindow(marker, infowindow);
